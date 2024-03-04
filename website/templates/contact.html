@@ -1,2 +1,48 @@
-<!-- your html code here -->
-<p>Hello, I'm contact.html</p>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con Bootstrap</title>
+    <!-- Enlace a Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.4.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-start">Contact</h1>
+        <p class="fs-5">
+            Donec ullamcorper nulla nom metus auctor fringilla. Vesibulum id ligula porta felis euismod semper.
+            Praesent commodo cursus magna, vel scereslique nisl consectetur. Fusce dapibus, tellus ac cursus
+            commodo.
+        </p>
+        <div class="row justify-content-center">
+            
+            <div class="col-md-10 border p-4"> <!-- Agrega borde y padding al formulario -->
+                <form>
+                    <div class="mb-3 row"> <!-- Utiliza row para alinear elementos horizontalmente -->
+                        <label for="email" class="col-md-2 col-form-label ps-4"><strong>Your E-mail:</strong></label> <!-- Define el ancho de la columna del label -->
+                        <div class="col-md-10"> <!-- Define el ancho de la columna del input -->
+                            <input type="email" class="form-control" id="email" placeholder="Your email" required>
+                        </div>
+                    </div>
+
+                    <div class="mb-3 row"> <!-- Utiliza row para alinear elementos horizontalmente -->
+                        <label for="mensaje" class="col-md-2 col-form-label ps-4"><strong>Your message:</strong></label> <!-- Define el ancho de la columna del label -->
+                        <div class="col-md-10"> <!-- Define el ancho de la columna del textarea -->
+                            <textarea class="form-control" id="mensaje" rows="4" placeholder="Please enter your messahe here..." required></textarea>
+                        </div>
+                    </div>
+
+                    <div class="text-end"> <!-- Alinea el botón a la derecha -->
+                        <button type="submit" class="btn btn-primary btn-lg"><strong>Submit</strong></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.4.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
